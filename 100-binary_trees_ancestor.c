@@ -15,7 +15,7 @@ static binary_tree_t *find_common_ancestor(
 	while (tmp)
 	{
 		if (first == tmp)
-			return (binary_tree_t *)first;
+			return ((binary_tree_t *)first);
 
 		tmp = tmp->parent;
 	}
@@ -45,5 +45,5 @@ binary_tree_t *binary_trees_ancestor(
 		first = first->parent;
 	}
 
-	    return (NULL);
+	return (NULL);
 }
